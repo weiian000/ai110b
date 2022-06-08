@@ -34,7 +34,7 @@ def optimize(p , loss ,h =0.01):
 		if( loss(dp) <= loss(p)):
 			p[0] = p[0] +dp1
 			p[1] = p[1] +dp2
-				
+			failcount =0
 		else:
 			failcount = failcount+1
 
