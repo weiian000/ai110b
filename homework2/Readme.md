@@ -1,0 +1,1 @@
+* 參考自<a href ="https://gitlab.com/ccc109/ai/-/blob/master/_homework/02-queen/queen.py">老師的程式</a>完全了解
