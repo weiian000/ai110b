@@ -15,7 +15,7 @@ class Value:
         out = Value(self.data + other.data, (self, other), '+')
 
         def _backward():
-            self.grad += out.grad  #  因為 f=x+y  gx微分是1 偏微分時直接乘1回來 => gx = gf，一定要使用加等於因為有可能一個節點輸出給不同個再去算出結果，權重會累加
+            self.grad += out.grad  #  因為 f=x+y  gx微分是1 偏微分時直接乘1回來 => gx = gf，一定要使用加等於因為有可能一元素輸出給不同個再去算出結果，權重會累加
             other.grad += out.grad # 同理 gy = gf
         out._backward = _backward
 
